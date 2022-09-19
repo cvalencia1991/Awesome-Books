@@ -44,7 +44,18 @@ function send(event){
     const ui = new UI;
     ui.addbook(book);
 
+    if(localStorage.getItem('books')=== null){
+        let books = [];
+        books.push(book);
+        localStorage.setItem('books', JSON.stringify(books));
+    }else{
+        let books = JSON.parse(localStorage.getItem('books'));
+        books.push(book);
+        localStorage.setItem('books', JSON.stringify(books));
+    }
+
     event.preventDefault();
+
 }
 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
@@ -53,6 +64,7 @@ function erasebook(e){
     const ui = new UI();
     ui.removebook(e.target);
 }
+
 
 
 
