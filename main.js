@@ -44,6 +44,8 @@ function send(event){
     const ui = new UI;
     ui.addbook(book);
 
+    /* local storage */
+
     if(localStorage.getItem('books')=== null){
         let books = [];
         books.push(book);
