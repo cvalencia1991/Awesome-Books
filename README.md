@@ -33,6 +33,8 @@ Cesar Alberto Valencia Aguilar
 
 👤 **Author2**
 
+Rodney Chakwesha
+
 - GitHub: [@RodChak](https://github.com/RodChak)
 - Twitter: [@RodneyChaks](https://twitter.com/RodneyChaks)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/rtc97/)
