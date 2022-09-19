@@ -10,7 +10,7 @@ class UI{
         const productCard = document.getElementById('statusbooks');
         const element = document.createElement('div');
         element.innerHTML =`
-        <div class= 'bookitem'>
+        <div>
             <div class="bookstyle">
                 ${book.tittle}<br>
                 ${book.autor}<br>
