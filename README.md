@@ -5,6 +5,15 @@
 > In this project, we will build a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. We will also need to dynamically modify the DOM and add basic events.
 
 
+## Getting Started
+
+if you want this project, follow the next intruccions:
+To get a local copy up and running follow these simple example steps.
+
+ - go to the code the repository Awesome Book
+ - Copy the next link https://github.com/cvalencia1991/Awesomebooks.git
+ - Use Git to clone the repository on the file you want to put it
+ - Enjoy :)
 
 ### Links
 
