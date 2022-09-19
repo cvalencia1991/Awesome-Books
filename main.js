@@ -7,28 +7,53 @@ class books{
 
 class UI{
     addbook(book){
-        document.getElementById
-
-
+        const productCard = document.getElementById('statusbooks');
+        const element = document.createElement('div');
+        element.innerHTML =`
+        <div class= 'bookitem'>
+            <div class="bookstyle">
+                ${book.tittle}<br>
+                ${book.autor}<br>
+                <button type="button" name="deletebook">remove</button>
+                <hr class="styleline">
+            </div>
+        </div>
+        `;
+        productCard.appendChild(element);
+        this.resetform();
     }
-    removebook(){
-
+    resetform(){
+        document.getElementById('books').reset();
     }
-    showMessage(){
-
+    removebook(element){
+        if(element.name ==='deletebook'){
+            element.parentElement.parentElement.parentElement.remove();
+        }
     }
 }
 
 const form = document.getElementById('books');
-form.addEventListener("submit", send)
+form.addEventListener("submit", send);
+
+
 
 function send(event){
-
     const tittlebook = document.getElementById('tittleBook').value;
     const name = document.getElementById('nameAutor').value;
-
     const book = new books(tittlebook,name);
-
+    const ui = new UI;
+    ui.addbook(book);
 
     event.preventDefault();
 }
+
+document.getElementById('statusbooks').addEventListener('click', erasebook);
+
+function erasebook(e){
+    const ui = new UI();
+    ui.removebook(e.target);
+}
+
+
+
+

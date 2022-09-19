@@ -1,6 +1,15 @@
+.styleline{
+    width:17em;
+}
+
+
 .stylecard{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: flex-start;
+    gap: 10px;
+}
+
+.bookstyle{
+    flex-direction: column;
 }
