@@ -1,15 +1,14 @@
-.styleline{
-    width:17em;
+.styleline {
+  width: 17em;
 }
 
-
-.stylecard{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+.stylecard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-.bookstyle{
-    flex-direction: column;
+.bookstyle {
+  flex-direction: column;
 }

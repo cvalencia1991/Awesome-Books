@@ -8,7 +8,7 @@
 
 ### Links
 
-- Live Site URL: [see live demo]()
+- Live Site URL: [see live demo](https://cvalencia1991.github.io/Awesomebooks/)
 
 
 
@@ -23,9 +23,9 @@
 
 👤 **Author1**
 
-- GitHub: [@RodChak](https://github.com/RodChak)
-- Twitter: [@RodneyChaks](https://twitter.com/RodneyChaks)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rtc97/)
+- GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
+- Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
+- LinkedIn: [https://www.linkedin.com/in/cvalenciaguilar/](www.linkedin.com/in/cvalenciaguilar)
 
 
 
@@ -41,7 +41,7 @@
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/cvalencia1991/Awesomebooks/issues).
 
 ## Show your support
 
