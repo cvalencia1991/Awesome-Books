@@ -2,6 +2,12 @@
   width: 17em;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card{
   display: flex;
   align-items: center;
@@ -28,7 +34,7 @@
 .styleform{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 10px;
 }
 
