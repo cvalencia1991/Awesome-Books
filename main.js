@@ -24,8 +24,6 @@ class methods {
       
         `;
     productCard.appendChild(element);
-    // this.resetform();
-
   }
 
   resetform() {
