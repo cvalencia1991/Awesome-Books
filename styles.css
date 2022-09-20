@@ -25,10 +25,12 @@
 .bookstyle {
   flex-direction: row;
   display: flex;
-  padding: 5px;
-  gap: 16em;
+  padding: 3px;
   border: solid;
   border: 1px solid black;
+  width: 30em;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .styleform{
