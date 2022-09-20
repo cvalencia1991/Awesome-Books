@@ -23,7 +23,8 @@ class methods {
                 <hr class="styleline">
         `;
     productCard.appendChild(element);
-    this.resetform();
+    // this.resetform();
+
   }
 
   resetform() {
@@ -32,7 +33,7 @@ class methods {
 
   removebook(element) {
     if (element.name === 'deletebook') {
-      element.parentElement.parentElement.parentElement.remove();
+      element.parentElement.remove();
     }
   }
 }
@@ -43,6 +44,7 @@ function send(event) {
   const book = new books(tittlebook, name);
   const ui = new methods();
   ui.addbook(book);
+  ui.resetform();
 
   /* local storage */
   if (localStorage.getItem('books') === null) {
