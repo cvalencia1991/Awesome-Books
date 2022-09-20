@@ -34,7 +34,7 @@ class methods {
 
   removebook(element) {
     if (element.name === 'deletebook') {
-      element.parentElement.remove();
+      element.parentElement.parentElement.remove();
     }
   }
 }
