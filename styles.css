@@ -2,13 +2,55 @@
   width: 17em;
 }
 
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .stylecard {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  align-items: center;
+
 }
 
 .bookstyle {
-  flex-direction: column;
+  flex-direction: row;
+  display: flex;
+  padding: 5px;
+  gap: 16em;
+  border: solid;
+  border: 1px solid black;
 }
+
+.styleform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.styleheaderform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.styletittleform{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line{
+  background: black;
+  display: flex;
+  flex-direction: column;
+  height: 1px;
+  height: 1px;
+  width: 6em;
+  margin-top: 1em;
+  align-items: center;
+}
+

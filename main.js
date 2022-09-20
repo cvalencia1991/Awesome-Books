@@ -17,10 +17,11 @@ class methods {
     const element = document.createElement('div');
     element.classList.add('bookstyle');
     element.innerHTML = `
-                ${book.tittle}<br>
-                ${book.autor}<br>
-                <button type="button" name="deletebook">remove</button>
-                <hr class="styleline">
+      "${book.tittle}" by ${book.autor}
+      <div>
+      <button type="button" name="deletebook">remove</button>
+      <div>
+      
         `;
     productCard.appendChild(element);
     // this.resetform();
