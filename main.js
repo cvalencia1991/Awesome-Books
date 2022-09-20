@@ -11,22 +11,18 @@ class books {
   }
 }
 
-class UI {
+class methods {
   addbook(book) {
     const productCard = document.getElementById('statusbooks');
     const element = document.createElement('div');
+    element.classList.add('bookstyle');
     element.innerHTML = `
-        <div>
-            <div class="bookstyle">
-                ${book.tittle}<br>
-                ${book.autor}<br>
-                <button type="button" name="deletebook">remove</button>
-                <hr class="styleline">
-            </div>
-        </div>
+      "${book.tittle}" by ${book.autor}
+      <div>
+      <button type="button" name="deletebook">remove</button>
+      <div>
         `;
     productCard.appendChild(element);
-    this.resetform();
   }
 
   resetform() {
@@ -35,7 +31,7 @@ class UI {
 
   removebook(element) {
     if (element.name === 'deletebook') {
-      element.parentElement.parentElement.parentElement.remove();
+      element.parentElement.parentElement.remove();
     }
   }
 }
@@ -44,8 +40,9 @@ function send(event) {
   const tittlebook = document.getElementById('tittleBook').value;
   const name = document.getElementById('nameAutor').value;
   const book = new books(tittlebook, name);
-  const ui = new UI();
+  const ui = new methods();
   ui.addbook(book);
+  ui.resetform();
 
   /* local storage */
   if (localStorage.getItem('books') === null) {
@@ -64,7 +61,7 @@ function send(event) {
 form.addEventListener('submit', send);
 
 function erasebook(e) {
-  const ui = new UI();
+  const ui = new methods();
   ui.removebook(e.target);
 }
 
