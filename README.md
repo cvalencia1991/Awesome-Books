@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Awesome Books: plain JavaScript with objects
+# Awesome Books: refactor to use JavaScript classes
 
-> In this project, we will build a basic website that allows users to add/remove books from a list. We will achieve that by using JavaScript objects and arrays. We will also need to dynamically modify the DOM and add basic events.
+> In this project, we will refactor the Awesome books application to use JavaScript classes.
 
 
 ## Getting Started
