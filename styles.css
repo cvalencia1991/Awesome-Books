@@ -1,3 +1,9 @@
+body,button,input {
+  font-family: cursive;
+
+}
+
+
 .styleline {
   width: 17em;
 }
@@ -23,11 +29,12 @@
 }
 
 .bookstyle {
+ 
   flex-direction: row;
   display: flex;
   padding: 3px;
   border: solid;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 30em;
   align-items: flex-end;
   justify-content: space-between;
@@ -61,4 +68,7 @@
   margin-top: 1em;
   align-items: center;
 }
+
+.bookstyle:nth-child(even) {background: #CCC}
+.bookstyle:nth-child(odd) {background: #FFF}
 
