@@ -21,7 +21,6 @@ class methods {
       <div>
       <button type="button" name="deletebook">remove</button>
       <div>
-      
         `;
     productCard.appendChild(element);
   }

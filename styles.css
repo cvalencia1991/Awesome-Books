@@ -1,20 +1,20 @@
-body,button,input {
+body,
+button,
+input {
   font-family: cursive;
-
 }
-
 
 .styleline {
   width: 17em;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card{
+.card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,11 +25,9 @@ body,button,input {
   flex-direction: column;
   align-items: flex-start;
   align-items: center;
-
 }
 
 .bookstyle {
- 
   flex-direction: row;
   display: flex;
   padding: 3px;
@@ -40,35 +38,34 @@ body,button,input {
   justify-content: space-between;
 }
 
-.styleform{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-}
-
-.styleheaderform{
+.styleform {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  gap: 10px;
 }
-.styletittleform{
+
+.styleheaderform {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.line{
+.styletittleform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
   background: black;
   display: flex;
   flex-direction: column;
-  height: 1px;
   height: 1px;
   width: 6em;
   margin-top: 1em;
   align-items: center;
 }
 
-.bookstyle:nth-child(even) {background: #CCC}
-.bookstyle:nth-child(odd) {background: #FFF}
-
+.bookstyle:nth-child(even) { background: #ccc; }
+.bookstyle:nth-child(odd) { background: #fff; }
