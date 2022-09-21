@@ -117,3 +117,9 @@ footer {
   bottom: 0;
   width: 98%;
 }
+
+#time {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
