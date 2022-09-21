@@ -30,6 +30,10 @@ body,button,input {
   color: blue;
 }
 
+.nav-links li a:after {
+  color: blue;
+}
+
 
 .styleline {
   width: 17em;

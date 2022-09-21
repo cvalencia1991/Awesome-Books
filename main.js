@@ -68,11 +68,40 @@ function erasebook(e) {
 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
 
-const list = document.querySelector('#list')
-list.onclick = displaybooks;
-function displaybooks() { 
+// const list = document.querySelector('#list')
+// list.onclick = displaybooks;
+function displaybooks(event) { 
+  event.preventDefault();
  const styleHeaderForm = document.getElementById('styleheader')
- styleHeaderForm.style.dislpay='none';
-// document.getElementById(id).style.property = new style
+ styleHeaderForm.style.display='none';
+ const headerLine = document.getElementById('header-line');
+ headerLine.textContent = "all awesome books";
+ const books = document.getElementById('statusbooks');
+ books.style.display = 'none' // document.getElementById(id).style.property = new style
+
+}
+
+function displayContact(event) { 
+  event.preventDefault();
+ const styleHeaderForm = document.getElementById('styleheader')
+//  styleHeaderForm.style.display='none';
+ const headerLine = document.getElementById('header-line');
+ headerLine.textContent = "Contact information";
+
+//  const element = document.createElement('div');
+ styleHeaderForm.innerHTML = `
+ <div>
+ <p>Do you have any questions or just want to say "Helo"?<br>
+    You can reach out to us!<br><br>
+    <ul>
+    <li>Our email: ceservalencia@gmail.com
+    <li>Our phone number: 00949y345853498579
+    <li>Our address: Streetname 4364, 74834 City, country
+    <ul>
+ <div>
+   `;
+   const cardboook = document.getElementById('cardboook')
+   cardboook.style.display='none';
+  //  headerLine.insertAdjacentElement(element);
 
 }
