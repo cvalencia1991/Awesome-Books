@@ -3,6 +3,33 @@ body,button,input {
 
 }
 
+#navigation {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #000;
+  padding: 0 12px 
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  color: #000;
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+
+}
+
+.nav-links li a:hover {
+  color: blue;
+}
+
 
 .styleline {
   width: 17em;

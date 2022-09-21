@@ -67,3 +67,12 @@ function erasebook(e) {
 }
 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
+
+const list = document.querySelector('#list')
+list.onclick = displaybooks;
+function displaybooks() { 
+ const styleHeaderForm = document.getElementById('styleheader')
+ styleHeaderForm.style.dislpay='none';
+// document.getElementById(id).style.property = new style
+
+}
