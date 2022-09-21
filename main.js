@@ -91,6 +91,8 @@ function displayContact(event) {
   contact.style.display='flex';
   const statusbooks = document.getElementById('statusbooks');
   statusbooks.style.display = 'none'
+  const seeinfo= document.getElementById('see');
+  seeinfo.style.display='flex'
 }
 
 function  displayform(event) {
@@ -102,10 +104,11 @@ function  displayform(event) {
   headerLine.textContent = "Add a new book";
   const contact = document.getElementById('contact');
   contact.style.display='none';
-  contact.appendChild(none);
   const statusbooks = document.getElementById('statusbooks');
   statusbooks.style.display = 'none'
   const see = document.getElementById('see');
   see.style.display = 'none';
 }
 
+const time = new Date();
+document.getElementById("time").innerHTML = time;

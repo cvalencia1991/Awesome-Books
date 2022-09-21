@@ -118,6 +118,11 @@ footer {
   width: 98%;
 }
 
+#see{
+  display: flex;
+  flex-direction: column;
+}
+
 #time {
   display: flex;
   justify-content: flex-end;
