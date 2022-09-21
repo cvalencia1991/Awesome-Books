@@ -5,6 +5,8 @@ body,button,input {
 
 #contact{
   display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 #navigation {

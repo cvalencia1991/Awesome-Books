@@ -21,7 +21,6 @@ class methods {
       <div>
       <button type="button" name="deletebook">remove</button>
       <div>
-      
         `;
     productCard.appendChild(element);
   }
@@ -65,18 +64,17 @@ function erasebook(e) {
   const ui = new methods();
   ui.removebook(e.target);
 }
- 
+
 document.getElementById('statusbooks').addEventListener('click', erasebook);
 
-// const list = document.querySelector('#list')
-// list.onclick = displaybooks;
-function displaybooks(event) { 
+
+function displaybooks(event) {
   event.preventDefault();
   const styleHeaderForm = document.getElementById('header-line')
   const books = document.getElementById('books');
   const statusbooks = document.getElementById('statusbooks');
   styleHeaderForm.textContent = "all awesome books";
-  books.style.display = 'none' // document.getElementById(id).style.property = new style
+  books.style.display = 'none'
   statusbooks.style.display='flex';
   const contact = document.getElementById('contact');
   contact.style.display = 'none'
@@ -99,5 +97,6 @@ function displayform(event) {
   books.style.display='flex'
   headerLine.textContent = "Contact information";
   const contact = document.getElementById('contact');
-  contact.style.display='flex';
+  contact.style.display='none';
+  contact.appendChild(books);
 }
