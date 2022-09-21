@@ -68,7 +68,7 @@ function erasebook(e) {
 document.getElementById('statusbooks').addEventListener('click', erasebook);
 
 
-function displaybooks(event) {
+function listbooks(event) {
   event.preventDefault();
   const styleHeaderForm = document.getElementById('header-line')
   const books = document.getElementById('books');
@@ -78,6 +78,7 @@ function displaybooks(event) {
   statusbooks.style.display='flex';
   const contact = document.getElementById('contact');
   contact.style.display = 'none'
+  
 }
 
 function displayContact(event) {
@@ -88,15 +89,22 @@ function displayContact(event) {
   headerLine.textContent = "Contact information";
   const contact = document.getElementById('contact');
   contact.style.display='flex';
+  const statusbooks = document.getElementById('statusbooks');
+  statusbooks.style.display = 'none'
 }
 
-function displayform(event) {
+function  displayform(event) {
+  
   event.preventDefault();
   const books = document.getElementById('books');
   const headerLine = document.getElementById('header-line');
   books.style.display='flex'
-  headerLine.textContent = "Contact information";
+  headerLine.textContent = "Add a new book";
   const contact = document.getElementById('contact');
   contact.style.display='none';
-  contact.appendChild(books);
+  contact.appendChild(none);
+  const statusbooks = document.getElementById('statusbooks');
+  statusbooks.style.display = 'none'
+  const see = document.getElementById('see');
+  see.style.display = 'none';
 }

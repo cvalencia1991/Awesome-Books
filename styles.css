@@ -78,7 +78,7 @@ body,button,input {
 }
 
 .styleform{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: flex-end;
     gap: 10px;
@@ -109,3 +109,11 @@ body,button,input {
 .bookstyle:nth-child(even) {background: #CCC}
 .bookstyle:nth-child(odd) {background: #FFF}
 
+footer {
+  display: flex;
+  justify-content: flex-start;
+  border: 3px solid #000;
+  color: black;
+  bottom: 0;
+  width: 98%;
+}
