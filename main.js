@@ -65,7 +65,7 @@ function erasebook(e) {
   const ui = new methods();
   ui.removebook(e.target);
 }
-
+ 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
 
 // const list = document.querySelector('#list')
