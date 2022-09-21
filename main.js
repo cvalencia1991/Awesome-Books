@@ -78,6 +78,8 @@ function displaybooks(event) {
   styleHeaderForm.textContent = "all awesome books";
   books.style.display = 'none' // document.getElementById(id).style.property = new style
   statusbooks.style.display='flex';
+  const contact = document.getElementById('contact');
+  contact.style.display = 'none'
 }
 
 function displayContact(event) {
@@ -86,17 +88,16 @@ function displayContact(event) {
   const headerLine = document.getElementById('header-line');
   books.style.display='none'
   headerLine.textContent = "Contact information";
- headerLine.insertAdjacentHTML('afterend',`
- <div>
- <p>Do you have any questions or just want to say "Helo"?<br>
-    You can reach out to us!<br><br>
-    <ul>
-    <li>Our email: ceservalencia@gmail.com
-    <li>Our phone number: 00949y345853498579
-    <li>Our address: Streetname 4364, 74834 City, country
-    <ul>
- <div>
-   `);
+  const contact = document.getElementById('contact');
+  contact.style.display='flex';
+}
 
-
+function displayform(event) {
+  event.preventDefault();
+  const books = document.getElementById('books');
+  const headerLine = document.getElementById('header-line');
+  books.style.display='flex'
+  headerLine.textContent = "Contact information";
+  const contact = document.getElementById('contact');
+  contact.style.display='flex';
 }

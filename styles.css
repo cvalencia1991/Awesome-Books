@@ -3,6 +3,10 @@ body,button,input {
 
 }
 
+#contact{
+  display: none;
+}
+
 #navigation {
   display:flex;
   justify-content: space-between;
