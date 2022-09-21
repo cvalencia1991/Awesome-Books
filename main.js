@@ -72,24 +72,21 @@ document.getElementById('statusbooks').addEventListener('click', erasebook);
 // list.onclick = displaybooks;
 function displaybooks(event) { 
   event.preventDefault();
- const styleHeaderForm = document.getElementById('styleheader')
- styleHeaderForm.style.display='none';
- const headerLine = document.getElementById('header-line');
- headerLine.textContent = "all awesome books";
- const books = document.getElementById('statusbooks');
- books.style.display = 'none' // document.getElementById(id).style.property = new style
-
+  const styleHeaderForm = document.getElementById('header-line')
+  const books = document.getElementById('books');
+  const statusbooks = document.getElementById('statusbooks');
+  styleHeaderForm.textContent = "all awesome books";
+  books.style.display = 'none' // document.getElementById(id).style.property = new style
+  statusbooks.style.display='flex';
 }
 
-function displayContact(event) { 
+function displayContact(event) {
   event.preventDefault();
- const styleHeaderForm = document.getElementById('styleheader')
-//  styleHeaderForm.style.display='none';
- const headerLine = document.getElementById('header-line');
- headerLine.textContent = "Contact information";
-
-//  const element = document.createElement('div');
- styleHeaderForm.innerHTML = `
+  const books = document.getElementById('books');
+  const headerLine = document.getElementById('header-line');
+  books.style.display='none'
+  headerLine.textContent = "Contact information";
+ headerLine.insertAdjacentHTML('afterend',`
  <div>
  <p>Do you have any questions or just want to say "Helo"?<br>
     You can reach out to us!<br><br>
@@ -99,9 +96,7 @@ function displayContact(event) {
     <li>Our address: Streetname 4364, 74834 City, country
     <ul>
  <div>
-   `;
-   const cardboook = document.getElementById('cardboook')
-   cardboook.style.display='none';
-  //  headerLine.insertAdjacentElement(element);
+   `);
+
 
 }
