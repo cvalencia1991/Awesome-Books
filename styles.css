@@ -2,7 +2,6 @@ body,
 button,
 input {
   font-family: cursive;
-
 }
 
 #contact {
@@ -39,7 +38,7 @@ input {
 .nav-links li a::after {
   color: blue;
 }
-}
+
 .styleline {
   width: 17em;
 }
@@ -75,9 +74,7 @@ input {
 }
 
 .styleform {
-
   display: none;
-
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
@@ -108,7 +105,6 @@ input {
 .bookstyle:nth-child(even) { background: #ccc; }
 .bookstyle:nth-child(odd) { background: #fff; }
 
-
 footer {
   display: flex;
   justify-content: flex-start;
@@ -129,4 +125,3 @@ footer {
   justify-content: flex-end;
   align-self: flex-end;
 }
-
