@@ -1,57 +1,55 @@
-body,button,input {
+body,
+button,
+input {
   font-family: cursive;
-
 }
 
-#contact{
+#contact {
   display: none;
   flex-direction: column;
   align-items: center;
 }
 
 #navigation {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   border: 3px solid #000;
-  padding: 0 12px 
+  padding: 0 12px;
 }
 
-.nav-links{
+.nav-links {
   display: flex;
   list-style: none;
   gap: 1em;
   color: #000;
-  
 }
 
 .nav-links li a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-
 }
 
 .nav-links li a:hover {
   color: blue;
 }
 
-.nav-links li a:after {
+.nav-links li a::after {
   color: blue;
 }
-
 
 .styleline {
   width: 17em;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card{
+.card {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -62,11 +60,9 @@ body,button,input {
   flex-direction: column;
   align-items: flex-start;
   align-items: center;
-
 }
 
 .bookstyle {
- 
   flex-direction: row;
   display: flex;
   padding: 3px;
@@ -77,37 +73,37 @@ body,button,input {
   justify-content: space-between;
 }
 
-.styleform{
-    display: none;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
+.styleform {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
 }
 
-.styleheaderform{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.styletittleform{
+.styleheaderform {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.line{
+.styletittleform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line {
   background: black;
   display: flex;
   flex-direction: column;
-  height: 1px;
   height: 1px;
   width: 6em;
   margin-top: 1em;
   align-items: center;
 }
 
-.bookstyle:nth-child(even) {background: #CCC}
-.bookstyle:nth-child(odd) {background: #FFF}
+.bookstyle:nth-child(even) { background: #ccc; }
+.bookstyle:nth-child(odd) { background: #fff; }
 
 footer {
   display: flex;
@@ -116,10 +112,10 @@ footer {
   color: black;
   bottom: 0;
   width: 98%;
-  margin: 2em 0px;
+  margin: 2em 0;
 }
 
-#see{
+#see {
   display: flex;
   flex-direction: column;
 }

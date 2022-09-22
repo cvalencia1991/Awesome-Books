@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable eqeqeq */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable new-cap */
@@ -67,72 +69,67 @@ function erasebook(e) {
 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
 
-
 function listbooks(event) {
-  event.preventDefault();
-  const styleHeaderForm = document.getElementById('header-line')
+  const styleHeaderForm = document.getElementById('header-line');
   const books = document.getElementById('books');
   const statusbooks = document.getElementById('statusbooks');
-  styleHeaderForm.textContent = "all awesome books";
-  books.style.display = 'none'
-  statusbooks.style.display='flex';
   const contact = document.getElementById('contact');
-  contact.style.display = 'none'
-  
+  styleHeaderForm.textContent = 'all awesome books';
+  books.style.display = 'none';
+  statusbooks.style.display = 'flex';
+  contact.style.display = 'none';
+  event.preventDefault();
 }
 
 function displayContact(event) {
-  event.preventDefault();
   const books = document.getElementById('books');
   const headerLine = document.getElementById('header-line');
-  books.style.display='none'
-  headerLine.textContent = "Contact information";
   const contact = document.getElementById('contact');
-  contact.style.display='flex';
   const statusbooks = document.getElementById('statusbooks');
-  statusbooks.style.display = 'none'
-  const seeinfo= document.getElementById('see');
-  seeinfo.style.display='flex'
+  const seeinfo = document.getElementById('see');
+  books.style.display = 'none';
+  headerLine.textContent = 'Contact information';
+  contact.style.display = 'flex';
+  statusbooks.style.display = 'none';
+  seeinfo.style.display = 'flex';
+  event.preventDefault();
 }
 
-function  displayform(event) {
-  
-  event.preventDefault();
+function displayform(event) {
   const books = document.getElementById('books');
   const headerLine = document.getElementById('header-line');
-  books.style.display='flex'
-  headerLine.textContent = "Add a new book";
   const contact = document.getElementById('contact');
-  contact.style.display='none';
   const statusbooks = document.getElementById('statusbooks');
-  statusbooks.style.display = 'none'
   const see = document.getElementById('see');
+  books.style.display = 'flex';
+  headerLine.textContent = 'Add a new book';
+  contact.style.display = 'none';
+  statusbooks.style.display = 'none';
   see.style.display = 'none';
+  event.preventDefault();
 }
 
-function currentTime(){
-  let date = new Date();
+function currentTime() {
+  const date = new Date();
   let hh = date.getHours();
   let mm = date.getMinutes();
   let ss = date.getSeconds();
-  let session = "AM";
+  let session = 'AM';
 
-  if(hh == 0){
-      hh = 12;
+  if (hh == 0) {
+    hh = 12;
   }
-  if(hh > 12){
-      hh = hh - 12;
-      session = "PM";
-   }
+  if (hh > 12) {
+    hh -= 12;
+    session = 'PM';
+  }
 
-   hh = (hh < 10) ? "0" + hh : hh;
-   mm = (mm < 10) ? "0" + mm : mm;
-   ss = (ss < 10) ? "0" + ss : ss;
-   let time = hh + ":" + mm + ":" + ss + " " + session;
+  hh = (hh < 10) ? `0${hh}` : hh;
+  mm = (mm < 10) ? `0${mm}` : mm;
+  ss = (ss < 10) ? `0${ss}` : ss;
+  const time = `${hh}:${mm}:${ss} ${session}`;
 
-  document.getElementById("time").innerText = time;
-  let t = setTimeout(function(){ currentTime() }, 1000);
+  document.getElementById('time').innerText = time;
+  const t = setTimeout(() => { currentTime(); }, 1000);
 }
 currentTime();
-
-
