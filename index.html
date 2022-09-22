@@ -5,29 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Awesomebooks</title>
+    <title>Awesome books</title>
 </head>
 <body>
-<div class="container">
-    <div class="card">
-        <h1> Awesome Books</h1>
+    <nav id = "navigation">
+        <div class="logo">Awesome Books</div>
+        <ul class = "nav-links">
+            <li onclick = "listbooks(event)"> <a href="">List</a></li>
+            <li onclick="displayform(event)"> <a href="">Add new</a></li>
+            <li onclick = "displayContact(event)"> <a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div id = "time"  onload="currentTime()"></div>
+    <div class="container">
+        <div id="styleheader" class="card">
+            <h1 id ="header-line"> Awesome Books</h1>
+        </div>
+        <div class="stylecard" id="statusbooks">
+        </div>
+        <div id="cardboook">
+            <form id="books" class="styleform" action="/">
+                <input type="text" id="tittleBook" placeholder="Title" required>
+                <input type="text" id="nameAutor" placeholder="Autor" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+        <div id="contact">
+            <div id="see">
+                <p>Do you have any questions or just want to say "Helo"?<br>
+               You can reach out to us!<br><br>
+               <ul>
+                    <li>Our email: ceservalencia@gmail.com</li>
+                    <li>Our phone number: 00949y345853498579</li>
+                    <li>Our address: Streetname 4364, 74834 City, country</li>
+               </ul>
+            </div>
+        </div>
     </div>
-    <div class="stylecard" id="statusbooks">
-
-    </div>
-    <div class="styleheaderform">
-        <div class="line"></div>
-        <h2 class="styletittleform">Add New Book</h2>
-
-    </div>
-    <div id="cardboook">
-        <form id="books" class="styleform" action="">
-            <input type="text" id="tittleBook" placeholder="Title" required>
-            <input type="text" id="nameAutor" placeholder="Autor" required>
-            <button type="submit">Add</button>
-        </form>
-    </div>
-</div>
+    <footer>
+        Copyright...
+    </footer>
     <script src="main.js"></script>
 </body>
 </html>

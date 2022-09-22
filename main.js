@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable eqeqeq */
 /* eslint-disable max-classes-per-file */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable new-cap */
@@ -66,3 +68,68 @@ function erasebook(e) {
 }
 
 document.getElementById('statusbooks').addEventListener('click', erasebook);
+
+function listbooks(event) {
+  const styleHeaderForm = document.getElementById('header-line');
+  const books = document.getElementById('books');
+  const statusbooks = document.getElementById('statusbooks');
+  const contact = document.getElementById('contact');
+  styleHeaderForm.textContent = 'all awesome books';
+  books.style.display = 'none';
+  statusbooks.style.display = 'flex';
+  contact.style.display = 'none';
+  event.preventDefault();
+}
+
+function displayContact(event) {
+  const books = document.getElementById('books');
+  const headerLine = document.getElementById('header-line');
+  const contact = document.getElementById('contact');
+  const statusbooks = document.getElementById('statusbooks');
+  const seeinfo = document.getElementById('see');
+  books.style.display = 'none';
+  headerLine.textContent = 'Contact information';
+  contact.style.display = 'flex';
+  statusbooks.style.display = 'none';
+  seeinfo.style.display = 'flex';
+  event.preventDefault();
+}
+
+function displayform(event) {
+  const books = document.getElementById('books');
+  const headerLine = document.getElementById('header-line');
+  const contact = document.getElementById('contact');
+  const statusbooks = document.getElementById('statusbooks');
+  const see = document.getElementById('see');
+  books.style.display = 'flex';
+  headerLine.textContent = 'Add a new book';
+  contact.style.display = 'none';
+  statusbooks.style.display = 'none';
+  see.style.display = 'none';
+  event.preventDefault();
+}
+
+function currentTime() {
+  const date = new Date();
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = 'AM';
+
+  if (hh == 0) {
+    hh = 12;
+  }
+  if (hh > 12) {
+    hh -= 12;
+    session = 'PM';
+  }
+
+  hh = (hh < 10) ? `0${hh}` : hh;
+  mm = (mm < 10) ? `0${mm}` : mm;
+  ss = (ss < 10) ? `0${ss}` : ss;
+  const time = `${hh}:${mm}:${ss} ${session}`;
+
+  document.getElementById('time').innerText = time;
+  const t = setTimeout(() => { currentTime(); }, 1000);
+}
+currentTime();
