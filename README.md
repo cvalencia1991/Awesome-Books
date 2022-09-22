@@ -2,7 +2,7 @@
 
 # Awesome Books: refactor to use JavaScript classes
 
-> In this project, we will refactor the Awesome books application to use JavaScript classes.
+> In this project, We add the links to the applications into the final project
 
 
 ## Getting Started
