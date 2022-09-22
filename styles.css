@@ -60,6 +60,7 @@ input {
   flex-direction: column;
   align-items: flex-start;
   align-items: center;
+  width: 98%;
 }
 
 .bookstyle {
@@ -68,7 +69,7 @@ input {
   padding: 3px;
   border: solid;
   border: 2px solid black;
-  width: 30em;
+  width: 98%;
   align-items: flex-end;
   justify-content: space-between;
 }
