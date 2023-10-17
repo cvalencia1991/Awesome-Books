@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Links
 
-- Live Site URL: [see live demo](https://cvalencia1991.github.io/Awesomebooks/)
+- Live Site URL: [see live demo](https://cvalencia1991.github.io/Awesome-Books/)
 
 
 
